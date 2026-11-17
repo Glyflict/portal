@@ -13,13 +13,24 @@
       .table1 td p {padding:0pt;line-height:1.15;text-align:left;color:#000000;font-weight:400;vertical-align:baseline;font-size:14pt;font-style:normal}
 	.custom-button {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	gap: 10px;
-	padding: 12px 24px;
+	justify-content: center;
+	gap: 5px;
+
+	width: 120px;
+	padding: 10px;
 	background: #333;
 	color: white;
 	text-decoration: none;
 	border-radius: 8px;
+}
+.custom-button img {
+	width: 160px;
+	height: 90px;
+}
+.custom-button span {
+	text-align: center;
 }
 	.button-image {
 	position: absolute;
@@ -37,7 +48,7 @@
     <p class="heading">■リリースノート</p>
     <table class="table1"><tr><td>
 	<a href="release_notes/v0.0/" class="custom-button">
-	<img class="button-image" src="release_notes/v0.0/thumbnail.png" alt="">
+	<img src="release_notes/v0.0/thumbnail.png" alt="">
 	<span>バージョン0.0リリースノート</span>
 </a></td></tr></table>
 
