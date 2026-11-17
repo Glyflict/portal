@@ -11,7 +11,22 @@
       .table1{border-spacing:0;border-collapse:collapse;margin-right:auto}
       .table1 td {border-style:solid;padding:5pt;border-color:#000000;border-width:1pt;vertical-align:top;width:250pt;}
       .table1 td p {padding:0pt;line-height:1.15;text-align:left;color:#000000;font-weight:400;vertical-align:baseline;font-size:14pt;font-style:normal}
-	.custom-button {
+	.scroll-container {
+	display: flex;
+	gap: 10px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	padding: 10px;
+	scroll-behavior: smooth;
+}
+
+.item {
+	flex: 0 0 200px;
+	height: 120px;
+	background: #ddd;
+}
+		.custom-button {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,11 +40,11 @@
 	text-decoration: none;
 	border-radius: 8px;
 }
-.custom-button img {
+		.custom-button img {
 	width: 160px;
 	height: 90px;
 }
-.custom-button span {
+		.custom-button span {
 	text-align: left;
 }
     </style>
@@ -39,11 +54,10 @@
 
     
     <p class="heading">■リリースノート</p>
-    <table class="table1"><tr><td>
+	<div class="scroll-container">
 	<a href="release_notes/v0.0/" class="custom-button">
 	<img src="release_notes/v0.0/thumbnail.png" alt="">
-	<span>バージョン0.0リリースノート</span>
-</a></td></tr></table>
-
+	<span>バージョン0.0リリースノート</span></a>
+	</div>
     <p class="heading"><br></p>
   </body></html>
