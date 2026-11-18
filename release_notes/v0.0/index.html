@@ -5,139 +5,92 @@
 	<meta name="author" content="Sumire Ito">
 	<meta name="robots" content="index, follow">
 	<meta charset="UTF-8">
-   	 <title>v0.0リリースノート　漢字ウォーズ | 基本プレイ無料</title>
+	<title>v0.0リリースノート　漢字ウォーズ | 基本プレイ無料</title>
 	<style>
+		body {margin-bottom: 20px; background-color: #2D134D;}
+		.doc-content {width: 100%; max-width: 1000px; box-sizing: border-box; padding: 40px; margin: 0 auto;}
+		hr {width: 80%; border: none; border-top: 2px solid #FFFFFF; margin: 20px auto;}
+		p {color: #FFFFFF; margin: 0; text-align: center; line-height: 1.15;
+			font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; font-style: normal; }
+		.big-title {font-size: 36px; font-weight: 700;}
+		.version {font-size: 24px; margin: 8px;}
+		.section-block {padding-top: 45px; padding-bottom: 9px;}
+		.section-block h2 {color:#FFFFFF; text-align: center; line-height: 1.15;
+			font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; font-style: italic; }
+		.bold {font-weight: 500;}
 
-		hr {
-			width: 80%;
-			border: none;
-			border-top: 2px solid #000000;
-			margin: 20px auto;
-		}
+		.text-content {max-width: 600px; box-sizing: border-box; padding: 7px; margin: auto;}
+		.text-content p {text-align: left;}
+		.text-content p + p {margin-top: 16px;}
 
-		body {
-			margin-bottom: 20px;
-			background-color: #ffffff;
-		}
+		img {display: block; max-width: 100%; height: auto;}
 
-		.doc-content {
-			width: 100%;
-			max-width: 1000px;
-			box-sizing: border-box;
-			padding: 40px;
-			margin: 0 auto;
-			background-color: #ffffff;
-		}
-
-		p {
-			margin: 0;
-			color: #000000;
-			font-family: "Arial";
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			text-align: center;
-			line-height: 1.15;
-		}
-
-		.big-title {
-			font-size: 36px;
-			font-weight: 700;
-		}
-
-		.version {
-			font-size: 24px;
-			margin: 8px;
-		}
-
-		.section-block {
-			padding-top: 45px;
-			padding-bottom: 9px;
-		}
-
-		.section-block h2 {
-			color: #000000;
-			font-family: Arial, sans-serif;
-			font-size: 24px;
-			font-weight: 700;
-			font-style: italic;
-			text-align: center;
-			line-height: 1.15;
-		}
-		.bold {
-			font-weight: 700;
-		}
-
-		.text-content {
-			max-width: 600px;
-			box-sizing: border-box;
-			padding: 7px;
-			margin: auto;
-		}
-		.text-content p {
-			text-align: left;
-		}
-
-		.text-content p + p {
-			margin-top: 16px;
-		}
-
-		img {
-			display: block;
-			max-width: 100%;
-			height: auto;
-		}
-
-		.kanji-icon {
-			display: inline-block;
-			width: 36px;
-			height: 36px;
-			overflow: hidden;
-			vertical-align: middle;
-		}
-
-		.thumbnail {
-			display: block;
-			overflow: hidden;
-			width:auto;
-			max-width: 800px;
-			height: auto;
-			box-sizing: border-box;
-			margin-bottom: 32px;
-			margin-top: 20px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.thumbnail img {
-			display: block;
-			height: auto;
-			width: 100%;
-		}
-
-		.image {
-			display: block;
-			width: fit-content;
-			max-width: 100%;
-			max-height: 480px;
-			overflow: hidden;
-			box-sizing: border-box;
-			margin-bottom: 32px;
-			margin-top: 10px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.image img {
-			display: block;
-			max-height: 480px;
-			max-width: 100%;
-		}
+		.kanji-icon {display: inline-block; width: 36px; height: 36px; overflow: hidden; vertical-align: middle;}
+		.kanji-icon img {filter: invert(100%); image-rendering:pixelated;}
+		.thumbnail {display: block; width:auto; height: auto; max-width: 800px; box-sizing: border-box;
+					overflow: hidden; margin-bottom: 32px; margin-top: 20px; margin-left: auto; margin-right: auto;}
+		.thumbnail img {display: block; height: auto; width: 100%;}
+		.image {display: block; width: fit-content; max-width: 100%; max-height: 480px; box-sizing: border-box;
+			overflow: hidden; margin-bottom: 32px; margin-top: 20px; margin-left: auto; margin-right: auto;}
+		.image img {display: block; max-height: 480px; max-width: 100%;}
+		.item-list {max-width:500px; list-style: circle inside none;}
+		.item-list li {margin-bottom: 4px; font-size: 18px;color:#FFFFFF}
 
 
+.menu-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	box-sizing: border-box;
+	background-color: #1A0B2D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	z-index: 1000;
+}
+
+.menu-bar a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+.menu-bar a:hover {
+	text-decoration: underline;
+}
+
+.custom-button {
+	position: absolute;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+}
+
+.custom-button img {
+	height: 48px;
+	padding: 12px;
+	
+}
 	</style>
 </head>
 
+
+
 <body>
+<div class="menu-bar">
+	<a href="../" class="custom-button">
+		<img src="../title_image.png">
+	</a>
+	<a href="">インストール</a>
+</div>
+
 	<div class="doc-content">
 
 		<p class="big-title">漢字ウォーズ リリースノート</p>
@@ -156,21 +109,21 @@
 		<div class="text-content">
 		<p>バトルが始まると、ランダムな漢字が装備品として選ばれる。漢字は3つのパーツに分かれており、それぞれを強力な武器（スキル）として使用できるぞ！</p>
 		<p>バージョン0.0では、次の6つの漢字が登場する。</p>
-		<p>
-		<br>■ <span class="kanji-icon"><img alt="「ひかり」の漢字" src="images/k_hikari.png"></span>
-			（<span class="bold">ひかり</span>）
-		<br>■ <span class="kanji-icon"><img alt="「はな」の漢字" src="images/k_hana.png"></span>
-			（<span class="bold">はな</span>）
-		<br>■ <span class="kanji-icon"><img alt="「みず」の漢字" src="images/k_mizu.png"></span>
-			（<span class="bold">みず</span>）
-		<br>■ <span class="kanji-icon"><img alt="「やいば」の漢字" src="images/k_yaiba.png"></span>
-			（<span class="bold">やいば</span>）
-		<br>■ <span class="kanji-icon"><img alt="「つき」の漢字" src="images/k_tsuki.png"></span>
-			（<span class="bold">つき</span>）
-		<br>■ <span class="kanji-icon"><img alt="「ひ」の漢字" src="images/k_hi.png"></span>
-			（<span class="bold">ひ</span>）
-		</p>
-		<p><br>どんなスキルが生まれるのかは、実際にプレイして確かめてみよう！</p>
+		<ul class="item-list">
+		<li><span class="kanji-icon"><img alt="「ひかり」の漢字" src="images/k_hikari.png"></span>
+			（<span class="bold">ひかり</span>）</li>
+		<li><span class="kanji-icon"><img alt="「はな」の漢字" src="images/k_hana.png"></span>
+			（<span class="bold">はな</span>）</li>
+		<li><span class="kanji-icon"><img alt="「みず」の漢字" src="images/k_mizu.png"></span>
+			（<span class="bold">みず</span>）</li>
+		<li><span class="kanji-icon"><img alt="「やいば」の漢字" src="images/k_yaiba.png"></span>
+			（<span class="bold">やいば</span>）</li>
+		<li><span class="kanji-icon"><img alt="「つき」の漢字" src="images/k_tsuki.png"></span>
+			（<span class="bold">つき</span>）</li>
+		<li><span class="kanji-icon"><img alt="「ひ」の漢字" src="images/k_hi.png"></span>
+			（<span class="bold">ひ</span>）</li>
+		</ul>
+		<p>どんなスキルが生まれるのかは、実際にプレイして確かめてみよう！</p>
 		<p>さらに、今後のアップデートで新たな漢字が追加される予定だ。</p>
 		</div>
 
@@ -183,11 +136,12 @@
 		<div class="text-content">
 		<p>バトルごとにランダムでマップが選ばれる。有利な場所に降下し、戦闘を有利に進めよう！</p>
 
-
-		<p><span class="bold">■ いにしえの島</span></p>
-		<div class="image"><img alt="「いにしえの島」の俯瞰図" src="images/island1.png" title=""></div>
-		<p><span class="bold">■ 火山の島</span></p>
-		<div class="image"><img alt="「火山の島」の俯瞰図" src="images/island2.png" title=""></div>
+		<ul class="item-list">
+		<li><span class="bold">いにしえの島</span>
+		<div class="image"><img alt="「いにしえの島」の俯瞰図" src="images/island1.png" title=""></div></li>
+		<li><span class="bold">火山の島</span>	
+		<div class="image"><img alt="「火山の島」の俯瞰図" src="images/island2.png" title=""></div></li>
+		</ul>
 		</div>
 
 		<div class="section-block"><h2>● ゲネシスチャレンジ 1</h2></div>
