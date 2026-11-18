@@ -12,11 +12,15 @@
 		hr {width: 80%; border: none; border-top: 2px solid #FFFFFF; margin: 20px auto;}
 		p {color: #FFFFFF; margin: 0; text-align: center; line-height: 1.15;
 			font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; font-style: normal; }
-		.big-title {font-size: 36px; font-weight: 700;}
+		.big-title {font-size: 36px; font-weight: 700; margin-top: 32px;}
 		.version {font-size: 24px; margin: 8px;}
-		.section-block {padding-top: 45px; padding-bottom: 9px;}
-		.section-block h2 {color:#FFFFFF; text-align: center; line-height: 1.15;
-			font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; font-style: italic; }
+		.section-block {padding-top: 45px; padding-bottom: 9px; text-align: center;}
+		.section-block h2 {color:#FFFFFF; line-height: 1.2;
+			font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; font-style: italic; display: inline-flex;
+			align-items: center; justify-content: center; gap: 10px; margin: 0;}
+		.section-block h2::before {content: ""; display: inline-block; flex-shrink: 0;
+			width: 18px; height: 18px; background-color: #FFFFFF; border-radius: 50%;}
+
 		.bold {font-weight: 500;}
 
 		.text-content {max-width: 600px; box-sizing: border-box; padding: 7px; margin: auto;}
@@ -34,7 +38,7 @@
 			overflow: hidden; margin-bottom: 32px; margin-top: 20px; margin-left: auto; margin-right: auto;}
 		.image img {display: block; max-height: 480px; max-width: 100%;}
 		.item-list {max-width:500px; list-style: circle inside none;}
-		.item-list li {margin-bottom: 4px; font-size: 18px;color:#FFFFFF}
+		.item-list li {font-weight:600; margin-bottom: 4px; font-size: 18px;color:#FFFFFF}
 
 
 .menu-bar {
@@ -86,7 +90,7 @@
 <body>
 <div class="menu-bar">
 	<a href="../" class="custom-button">
-		<img src="../title_image.png">
+		<img src="../../title_image.png">
 	</a>
 	<a href="">インストール</a>
 </div>
@@ -98,13 +102,13 @@
 		<div class="thumbnail"><img src="images/thumbnail.png" alt="漢字ウォーズのゲームタイトル画像"></div>
 		<hr>
 
-		<div class="section-block"><h2>● チーム戦バトル</h2></div>
+		<div class="section-block"><h2>チーム戦バトル</h2></div>
 		<p>---</p>
 		<div class="text-content">
 		<p>基本モードは6対6のチーム戦。仲間と協力して、敵チームよりも先に100キルを達成しよう！</p>
 		</div>
 
-		<div class="section-block"><h2>● 漢字から生まれる武器</h2></div>
+		<div class="section-block"><h2>漢字から生まれる武器</h2></div>
 		<div class="image"><img alt="「はな」と「やいば」の装備時のイメージ画像" src="images/kanjipreview.png"></div>
 		<div class="text-content">
 		<p>バトルが始まると、ランダムな漢字が装備品として選ばれる。漢字は3つのパーツに分かれており、それぞれを強力な武器（スキル）として使用できるぞ！</p>
@@ -127,12 +131,12 @@
 		<p>さらに、今後のアップデートで新たな漢字が追加される予定だ。</p>
 		</div>
 
-		<div class="section-block"><h2>● 漢字マスタリー</h2></div>
+		<div class="section-block"><h2>漢字マスタリー</h2></div>
 		<div class="text-content">
 		<p>各漢字には、バトルで役立つ固有の能力が備わっている。キル、アシスト、マッチの勝利によって経験値を獲得すると、その漢字のマスタリーレベルが上昇し、固有能力が強化されるぞ！</p>
 		</div>
 
-		<div class="section-block"><h2>● マップ</h2></div>
+		<div class="section-block"><h2>マップ</h2></div>
 		<div class="text-content">
 		<p>バトルごとにランダムでマップが選ばれる。有利な場所に降下し、戦闘を有利に進めよう！</p>
 
@@ -144,13 +148,13 @@
 		</ul>
 		</div>
 
-		<div class="section-block"><h2>● ゲネシスチャレンジ 1</h2></div>
+		<div class="section-block"><h2>ゲネシスチャレンジ 1</h2></div>
 		<div class="text-content">
 		<p>通常のバトルとはひと味違う戦いに挑戦しよう。全20チャレンジをクリアすると、限定スキン「ロボット・コールドスチール」を入手できるぞ！</p>
 		</div>
 		<div class="image"><img alt="スキン「ロボット・コールドスチール」のイメージ画像" src="images/coldsteel.png" title=""></div>
 
-		<div class="section-block"><h2>● ファウンダーズ・コスメティックパック</h2></div>
+		<div class="section-block"><h2>ファウンダーズ・コスメティックパック</h2></div>
 		<div class="text-content">
 		<p>限定スキン、ラップ、アクセサリを入手できるDLCパック「ファウンダーズ・コスメティックパック」を販売中！ お気に入りの見た目でバトルを彩ろう。</p>
 		</div>
