@@ -9,7 +9,7 @@
 	<style>
 		body {margin-bottom: 20px; background-color: #2D134D;}
 		.doc-content {width: 100%; max-width: 1000px; box-sizing: border-box; padding: 40px; margin: 0 auto;}
-		hr {width: 80%; border: none; border-top: 2px solid #FFFFFF; margin: 20px auto;}
+		hr {width: 80%; border: none; border-top: 2px solid #FFFFFF; margin: 60px auto;}
 		p {color: #FFFFFF; margin: 0; text-align: center; line-height: 1.15;
 			font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; font-style: normal; }
 		.big-title {font-size: 36px; font-weight: 700; margin-top: 32px;}
@@ -39,62 +39,15 @@
 		.image img {display: block; max-height: 480px; max-width: 100%;}
 		.item-list {max-width:500px; list-style: circle inside none;}
 		.item-list li {font-weight:600; margin-bottom: 4px; font-size: 18px;color:#FFFFFF}
-
-
-.menu-bar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 56px;
-	box-sizing: border-box;
-	background-color: #1A0B2D;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 24px;
-	z-index: 1000;
-}
-
-.menu-bar a {
-	color: #FFFFFF;
-	text-decoration: none;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-}
-
-.menu-bar a:hover {
-	text-decoration: underline;
-}
-
-.custom-button {
-	position: absolute;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 48px;
-}
-
-.custom-button img {
-	height: 48px;
-	padding: 12px;
-	
-}
 	</style>
 </head>
 
 
 
 <body>
-<div class="menu-bar">
-	<a href="../" class="custom-button">
-		<img src="../../title_image.png">
-	</a>
-	<a href="">インストール</a>
-</div>
 
+<div id="menu-container"></div>
+<script src="/portal/menu.js" defer></script>
 	<div class="doc-content">
 
 		<p class="big-title">漢字ウォーズ リリースノート</p>
