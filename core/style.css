@@ -1,9 +1,9 @@
-body {margin:0px; background-color: #2D134D;padding:0px;}
-
-.doc-content {zoom: 1.0; width: 100%; max-width: 1000px; box-sizing: border-box; padding: 40px; margin: 0 auto;}
-@media (max-width: 600px) {.doc-content{zoom:1.8;}}
-hr {width: 80%; border: none; border-top: 2px solid #FFFFFF; margin: 40px auto;}
-p {color: #FFFFFF; margin: 0; text-align: center; line-height: 1.15; font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; font-style: normal; }
-.big-title {font-size: 36px; font-weight: 700; margin-top: 32px;}
-.section-content {background: #000000;border-radius: 15px;}
-.section-content p {font-size: 20px; padding:16px;text-align: left; font-weight: 500;}
+html {font-size: 16px;}
+@media (max-width: 600px) {html {font-size:20px;}}
+body {margin:0rem; background-color: #2D134D;padding:0rem;}
+.doc-content {width: 100%; max-width: 62.5rem; box-sizing: border-box; padding: 2.5rem; margin: 0 auto;}
+hr {width: 80%; border: none; border-top: 0.125rem solid #FFFFFF; margin: 2.5rem auto;}
+p {color: #FFFFFF; margin: 0; text-align: center; line-height: 1.15; font-family: Arial, sans-serif; font-size: 1rem; font-weight: 400; font-style: normal; }
+.big-title {font-size: 2.25rem; font-weight: 700; margin-top: 2rem;}
+.section-content {background: #000000;border-radius: 0.9375rem;}
+.section-content p {font-size: 1.25rem; padding:1rem;text-align: left; font-weight: 500;}
