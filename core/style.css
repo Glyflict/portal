@@ -8,6 +8,6 @@ p {color: #FFFFFF; margin: 0; text-align: center; line-height: 1.15; font-family
 .section-content p {font-size: 1.25rem; padding:1rem;text-align: left; font-weight: 500;}
 
 @media (max-width: 600px) {
-	html {font-size:16px;}
-	p {font-size: 1.25rem;}
+	html {font-size:10px;}
+	p {font-size: 1.5rem;}
 }
