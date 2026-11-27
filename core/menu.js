@@ -28,6 +28,9 @@ async function loadComponents() {
 	await setLanguage(lang);
 
 	document.getElementById("language-select").value = lang;
+
+	// 翻訳完了後にページを表示
+	document.documentElement.classList.add("loaded");
 }
 
 loadComponents();
