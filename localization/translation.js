@@ -6,6 +6,9 @@ async function setLanguage(lang) {
 		history.replaceState(null, "", url);
 	}
 	
+	// 言語選択をローカルに保存
+	localStorage.setItem("language", lang);
+
 	const response = await fetch(`/portal/localization/${lang}.json`);
 	const data = await response.json();
 

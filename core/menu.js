@@ -23,7 +23,7 @@ async function loadComponents() {
 	}));
 
 	const params = new URLSearchParams(location.search);
-	const lang = params.get("lang") || "ja";
+	const lang = params.get("lang") || localStorage.getItem("language") || "en";
 
 	await setLanguage(lang);
 
@@ -31,3 +31,4 @@ async function loadComponents() {
 }
 
 loadComponents();
+

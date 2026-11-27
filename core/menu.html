@@ -24,7 +24,7 @@ background-color: #B640FF;position: absolute;right: 0.5rem;display: flex;
 	color: #FFFFFF;
 	text-decoration: none;
 	font-family: Arial, sans-serif;
-	font-size: 0.875rem;
+	//font-size: 0.875rem;
 	height: 3.5rem;
   line-height: 3.5rem;
 	padding: 0rem 1rem;
@@ -40,16 +40,19 @@ background-color: #B640FF;position: absolute;right: 0.5rem;display: flex;
 	align-items: center;
 	justify-content: center;height: 3.5rem;}
 .title-button img {height: 3rem; padding: 0.25rem;}
+
+.select_lang {position: absolute;right: 8.5rem;}
+
 </style>
 
 
 <div class="menu-bar">
 	<a href="/portal/" class="title-button"><img src="/portal/res/logo.png"></a>
-	<a class="install-button" href="">インストール</a>
+	<a class="install-button" href="" data-i18n="install">インストール</a>
 
-	<a href="/portal/index.html#updates">アップデート</a>
-	<a href="/portal/pages/library/">ライブラリ</a>
-<select id="language-select" onchange="setLanguage(this.value)">
+	<a href="/portal/index.html#updates" data-i18n="updates">アップデート</a>
+	<a href="/portal/pages/library/" data-i18n="library">ライブラリ</a>
+<select class="select_lang" id="language-select" onchange="setLanguage(this.value)">
 	<option value="ja">日本語</option>
 	<option value="en">English</option>
 </select>
